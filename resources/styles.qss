@@ -1,0 +1,180 @@
+/* Stili globali per l'applicazione */
+
+QWidget {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12pt;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Stili per i pulsanti */
+QPushButton {
+    background-color: #2E86C1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 11pt;
+    min-width: 100px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+QPushButton:hover {
+    background-color: #1B4F72;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+QPushButton:pressed {
+    background-color: #154360;
+    transform: translateY(1px);
+}
+
+/* Stili per le tabelle */
+QTableWidget {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background-color: white;
+    gridline-color: #e9ecef;
+    selection-background-color: #e3f2fd;
+    selection-color: #1B4F72;
+}
+
+QHeaderView::section {
+    background-color: #2E86C1;
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-right: 1px solid #1B4F72;
+}
+
+QTableWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+QTableWidget::item:selected {
+    background-color: #e3f2fd;
+    color: #1B4F72;
+}
+
+/* Stili per i campi di input */
+QLineEdit {
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    padding: 8px 12px;
+    background-color: white;
+    selection-background-color: #2E86C1;
+    selection-color: white;
+}
+
+QLineEdit:focus {
+    border-color: #2E86C1;
+    outline: none;
+}
+
+/* Stili per le etichette */
+QLabel {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 5px;
+}
+
+/* Stili per i tab */
+QTabWidget::pane {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background-color: white;
+    top: -1px;
+}
+
+QTabBar::tab {
+    background-color: #f8f9fa;
+    color: #495057;
+    padding: 12px 20px;
+    border: 1px solid #e9ecef;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    min-width: 80px;
+    font-weight: 500;
+}
+
+QTabBar::tab:selected {
+    background-color: #2E86C1;
+    color: white;
+    border-color: #2E86C1;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #e9ecef;
+}
+
+/* Stili per i frame */
+QFrame {
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Stili per i messaggi di dialogo */
+QMessageBox {
+    background-color: white;
+}
+
+QMessageBox QLabel {
+    color: #333;
+    font-size: 12pt;
+}
+
+QMessageBox QPushButton {
+    min-width: 80px;
+}
+
+/* Stili per le scrollbar */
+QScrollBar:vertical {
+    border: none;
+    background-color: #f8f9fa;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #2E86C1;
+    border-radius: 6px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #1B4F72;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background-color: #f8f9fa;
+    height: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #2E86C1;
+    border-radius: 6px;
+    min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #1B4F72;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
